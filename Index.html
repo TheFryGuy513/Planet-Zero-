@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Planet Zero | Build Beyond</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #080b18;
+            color: white;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 25px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #202947;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #9c8cff;
+            letter-spacing: 2px;
+        }
+
+        nav a {
+            color: #ccc;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #a99aff;
+        }
+
+        .hero {
+            min-height: 570px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 50px 20px;
+            background:
+                radial-gradient(ellipse at 50% 40%, #25245c 0%, #10152e 45%, #080b18 80%);
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 9vw, 85px);
+            letter-spacing: 8px;
+            color: #ffffff;
+            text-shadow: 0 0 25px #7770ff;
+        }
+
+        .hero h2 {
+            color: #aaa0ff;
+            font-size: 22px;
+            margin: 10px 0 20px;
+            letter-spacing: 3px;
+        }
+
+        .hero p {
+            max-width: 600px;
+            color: #c5c9dc;
+            margin-bottom: 30px;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 13px 28px;
+            background: #7665e8;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .button:hover {
+            background: #9587ff;
+        }
+
+        section {
+            padding: 70px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #a99aff;
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            max-width: 750px;
+            margin: auto;
+            color: #c1c6d9;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-top: 35px;
+        }
+
+        .card {
+            background: #121a32;
+            border: 1px solid #30385e;
+            padding: 30px 20px;
+            border-radius: 10px;
+        }
+
+        .card h3 {
+            color: #a99aff;
+            margin-bottom: 12px;
+        }
+
+        .updates {
+            background: #0d1225;
+        }
+
+        footer {
+            padding: 30px;
+            text-align: center;
+            color: #777f9d;
+            border-top: 1px solid #202947;
+            font-size: 13px;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero {
+                min-height: 480px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">PLANET ZERO</div>
+
+    <nav>
+        <a href="#about">About</a>
+        <a href="#features">Features</a>
+        <a href="#updates">Updates</a>
+    </nav>
+</header>
+
+<div class="hero">
+    <h1>PLANET ZERO</h1>
+
+    <h2>BUILD BEYOND</h2>
+
+    <p>
+        Stranded on a lifeless world, your journey is just beginning.
+        Gather resources, terraform the planet, build a civilization
+        and make the galaxy your own.
+    </p>
+
+    <a href="#about" class="button">EXPLORE THE PROJECT</a>
+</div>
+
+<section id="about">
+    <h2>A New World Awaits</h2>
+
+    <p>
+        Planet Zero is a sci-fi survival and civilization-building
+        adventure. Begin with nothing but your robot and the resources
+        around you. Transform a barren planet into a thriving home
+        for an entire civilization.
+    </p>
+</section>
+
+<section id="features">
+    <h2>Your Universe. Your Creation.</h2>
+
+    <div class="features">
+
+        <div class="card">
+            <h3>🤖 Customize</h3>
+            <p>Build, customize and upgrade your robot.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌱 Terraform</h3>
+            <p>Turn lifeless worlds into living planets.</p>
+        </div>
+
+        <div class="card">
+            <h3>🏗️ Build</h3>
+            <p>Create homes, buildings and entire communities.</p>
+        </div>
+
+        <div class="card">
+            <h3>🚀 Explore</h3>
+            <p>Discover new planets and unique resources.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="updates" class="updates">
+    <h2>Development Updates</h2>
+
+    <p>
+        Planet Zero is currently in development!
+        Follow along as we build our universe, one step at a time.
+        More updates coming soon.
+    </p>
+</section>
+
+<footer>
+    <p>PLANET ZERO © 2026 | A Universe Under Construction</p>
+</footer>
+
+</body>
+</html>
